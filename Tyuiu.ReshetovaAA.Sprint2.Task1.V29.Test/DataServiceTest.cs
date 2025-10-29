@@ -1,6 +1,6 @@
 ﻿using Tyuiu.ReshetovaAA.Sprint2.Task1.V29.Lib;
 
-namespace Tyuiu.SpirinIS.Sprint2.Task1.V29.Test
+namespace Tyuiu.ReshetovaAA.Sprint2.Task1.V29.Test
 {
     [TestClass]
     public class DataServiceTest
