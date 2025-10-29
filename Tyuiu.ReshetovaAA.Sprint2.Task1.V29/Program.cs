@@ -1,6 +1,7 @@
-﻿using Tyuiu.ReshetovaAA.Sprint2.Task1.V29.Lib;
+﻿using System;
+using Tyuiu.ReshetovaAA.Sprint2.Task1.V29.Lib;
 
-namespace Tyuiu.ReshetovaAA.Sprint2.Task2.V29
+namespace Tyuiu.ReshetovaAA.Sprint2.Task1.V29
 {
     internal class Program
     {
@@ -10,39 +11,47 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task2.V29
 
             Console.Title = "Спринт #2 | Выполнила: Решетова Арина | СМАРТб-25-1";
 
+            int a = 657;
+            int b = 654;
+            int c = 657;
+            int d = 657;
+
+            bool[] res = new bool[6];
+            res = ds.GetLogicOperations(a, b, c, d);
+
             Console.WriteLine("***************************************************************************************************");
             Console.WriteLine("* Спринт #2                                                                                       *");
-            Console.WriteLine("* Тема: Проверка принадлежности точки области                                                     *");
+            Console.WriteLine("* Тема: Операции сравнения и логические выражения                                                 *");
             Console.WriteLine("* Задание #1                                                                                      *");
             Console.WriteLine("* Вариант #29                                                                                     *");
             Console.WriteLine("* Выполнила: Решетова Арина | СМАРТб-25-1                                                          *");
             Console.WriteLine("* УСЛОВИЕ:                                                                                        *");
-            Console.WriteLine("* Написать программу, которая проверяет принадлежность точки (x, y)                               *");
-            Console.WriteLine("* заштрихованной области.                                                                         *");
-            Console.WriteLine("* Вернуть True, если точка принадлежит области, иначе False.                                      *");
+            Console.WriteLine("* Написать программу из операций сравнений (==, !=, <, >, <=, >=)                                 *");
+            Console.WriteLine("* и логических операций (|, &, ||, &&, !, ^), которая вернет логическую                           *");
+            Console.WriteLine("* последовательность (True, True, True, False, True, True) при a=657, b=654, c=657, d=657.        *");
             Console.WriteLine("***************************************************************************************************");
 
             Console.WriteLine();
             Console.WriteLine("***************************************************************************************************");
-            Console.WriteLine("* ВВОД ДАННЫХ:                                                                                    *");
+            Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                *");
             Console.WriteLine("***************************************************************************************************");
-
-            Console.Write("Введите значение X: ");
-            int x = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Введите значение Y: ");
-            int y = Convert.ToInt32(Console.ReadLine());
-
-            bool result = ds.CheckDotInShadedArea(x, y);
+            Console.WriteLine("a = " + a);
+            Console.WriteLine("b = " + b);
+            Console.WriteLine("c = " + c);
+            Console.WriteLine("d = " + d);
 
             Console.WriteLine();
             Console.WriteLine("***************************************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                      *");
             Console.WriteLine("***************************************************************************************************");
-            Console.WriteLine("Точка принадлежит заштрихованной области: " + result);
+
+            for (int i = 0; i < 6; i++)
+            {
+                Console.WriteLine(res[i]);
+            }
 
             Console.ReadKey();
         }
     }
-
 }
+

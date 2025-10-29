@@ -1,11 +1,21 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint2;
+
 namespace Tyuiu.ReshetovaAA.Sprint2.Task1.V29.Lib
 {
-    public class DataService : ISprint2Task2V29
+    public class DataService : ISprint2Task1V29
     {
-        public bool CheckDotInShadedArea(int x, int y)
+        public bool[] GetLogicOperations(int a, int b, int c, int d)
         {
-            return (x >= 0 && x <= 10 && y >= 0 && y <= 5);
+            bool[] res = new bool[6];
+
+            res[0] = (a == c) | (b < d);
+            res[1] = (a != b) & (c >= d);
+            res[2] = (a > b) || (c == d);
+            res[3] = (a < b) && (c > d);
+            res[4] = (a <= d) ^ (b > c);
+            res[5] = (a == d) && (c >= b);
+
+            return res;
         }
     }
 }

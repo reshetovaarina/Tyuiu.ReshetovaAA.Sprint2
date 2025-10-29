@@ -1,4 +1,5 @@
-﻿using Tyuiu.ReshetovaAA.Sprint2.Task1.V29.Lib;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Tyuiu.ReshetovaAA.Sprint2.Task1.V29.Lib;
 
 namespace Tyuiu.ReshetovaAA.Sprint2.Task1.V29.Test
 {
@@ -6,18 +7,20 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task1.V29.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCheckDotInShadedArea()
+        public void ValidGetLogicOperations()
         {
             DataService ds = new DataService();
 
-            int x = 5;
-            int y = 3;
+            int a = 657;
+            int b = 654;
+            int c = 657;
+            int d = 657;
 
-            bool result = ds.CheckDotInShadedArea(x, y);
+            bool[] res = new bool[6];
+            res = ds.GetLogicOperations(a, b, c, d);
+            bool[] wait = new bool[6] { true, true, true, false, true, true };
 
-            bool wait = true;
-
-            Assert.AreEqual(wait, result);
+            CollectionAssert.AreEqual(wait, res);
         }
     }
 }
