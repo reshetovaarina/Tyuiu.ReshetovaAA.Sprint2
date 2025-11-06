@@ -3,7 +3,7 @@ using tyuiu.cources.programming.interfaces.Sprint2;
 
 namespace Tyuiu.ReshetovaAA.Sprint2.Task3.V23.Lib
 {
-    public class DataService : ISprint2Task3V29
+    public class DataService : ISprint2Task3V23
     {
         public double Calculate(double x)
         {
