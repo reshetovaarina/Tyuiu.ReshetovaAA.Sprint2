@@ -8,7 +8,7 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task7.V12.Lib
         {
             bool res;
 
-            if ((x >= 0 && x <= 1) && (y >= Math.Pow(x, 2)) && (y <= 2 - x))
+            if ((x >= -2 && x <= 1) && (y >= Math.Pow(x, 2)) && (y <= 2 - x))
             {
                 res = true;
             }
