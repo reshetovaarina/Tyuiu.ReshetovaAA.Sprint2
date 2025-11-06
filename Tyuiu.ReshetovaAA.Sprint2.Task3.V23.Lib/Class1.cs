@@ -3,7 +3,7 @@ using tyuiu.cources.programming.interfaces.Sprint2;
 
 namespace Tyuiu.ReshetovaAA.Sprint2.Task3.V23.Lib
 {
-    public class DataService : ISprint2Task3V23
+    public class DataService : ISprint2Task3V29
     {
         public double Calculate(double x)
         {
@@ -11,19 +11,23 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task3.V23.Lib
 
             if (x > 1)
             {
+                // y = x * ((x + 1) / (x - 1)) ^ x
                 y = x * Math.Pow((x + 1) / (x - 1), x);
             }
             else if (x == 0)
             {
+                // y = (x^2 + cos(x^2) - 17) / (x^2 - sin(x^2) + 3)
                 y = (Math.Pow(x, 2) + Math.Cos(Math.Pow(x, 2)) - 17)
                     / (Math.Pow(x, 2) - Math.Sin(Math.Pow(x, 2)) + 3);
             }
             else if (x > -27 && x < 2)
             {
+                // y = (3 + 1/x^2)^x
                 y = Math.Pow(3 + 1 / Math.Pow(x, 2), x);
             }
-            else 
+            else // x < -27
             {
+                // y = x + 10x - (1/x^2)
                 y = x + 10 * x - (1 / Math.Pow(x, 2));
             }
 
