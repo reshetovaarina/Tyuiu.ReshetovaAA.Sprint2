@@ -25,7 +25,7 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Test
             int g = 2023;
             int m = 1;
             int n = 31;
-            string wait = "1.2.2023"; 
+            string wait = "1.2.2023";
             string res = ds.FindDateOfNextDay(g, m, n);
             Assert.AreEqual(wait, res);
         }
@@ -37,7 +37,7 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Test
             int g = 2023;
             int m = 2;
             int n = 28;
-            string wait = "1.3.2023"; 
+            string wait = "1.3.2023";
             string res = ds.FindDateOfNextDay(g, m, n);
             Assert.AreEqual(wait, res);
         }
@@ -71,9 +71,9 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Test
         {
             DataService ds = new DataService();
             int g = 2023;
-            int m = 6;
-            int n = 15;
-            string wait = "16.6.2023";
+            int m = 9;
+            int n = 8;
+            string wait = "9.9.2023";
             string res = ds.FindDateOfNextDay(g, m, n);
             Assert.AreEqual(wait, res);
         }
