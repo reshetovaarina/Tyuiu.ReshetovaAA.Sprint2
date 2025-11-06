@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Lib;
-
 namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Test
 {
     [TestClass]
@@ -13,7 +12,7 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Test
             int g = 2023;
             int m = 1;
             int n = 15;
-            string wait = "16.1.2023";
+            string wait = "16.01.2023";
             string res = ds.FindDateOfNextDay(g, m, n);
             Assert.AreEqual(wait, res);
         }
@@ -25,7 +24,7 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Test
             int g = 2023;
             int m = 1;
             int n = 31;
-            string wait = "1.2.2023";
+            string wait = "01.02.2023";
             string res = ds.FindDateOfNextDay(g, m, n);
             Assert.AreEqual(wait, res);
         }
@@ -37,7 +36,7 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Test
             int g = 2023;
             int m = 2;
             int n = 28;
-            string wait = "1.3.2023";
+            string wait = "01.03.2023";
             string res = ds.FindDateOfNextDay(g, m, n);
             Assert.AreEqual(wait, res);
         }
@@ -49,7 +48,7 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Test
             int g = 2023;
             int m = 12;
             int n = 31;
-            string wait = "1.1.2024";
+            string wait = "01.01.2024";
             string res = ds.FindDateOfNextDay(g, m, n);
             Assert.AreEqual(wait, res);
         }
@@ -61,7 +60,7 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Test
             int g = 2023;
             int m = 4;
             int n = 30;
-            string wait = "1.5.2023";
+            string wait = "01.05.2023";
             string res = ds.FindDateOfNextDay(g, m, n);
             Assert.AreEqual(wait, res);
         }
@@ -73,7 +72,7 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Test
             int g = 2023;
             int m = 9;
             int n = 8;
-            string wait = "9.9.2023";
+            string wait = "09.09.2023";
             string res = ds.FindDateOfNextDay(g, m, n);
             Assert.AreEqual(wait, res);
         }

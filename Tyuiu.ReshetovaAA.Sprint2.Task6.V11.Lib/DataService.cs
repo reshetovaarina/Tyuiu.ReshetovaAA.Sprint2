@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 using tyuiu.cources.programming.interfaces.Sprint2;
-
 namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Lib
 {
     public class DataService : ISprint2Task6V11
@@ -47,7 +46,10 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task6.V11.Lib
                 }
             }
 
-            return nextDay + "." + nextMonth + "." + nextYear;
+            string formattedDay = nextDay.ToString("00");
+            string formattedMonth = nextMonth.ToString("00");
+
+            return $"{formattedDay}.{formattedMonth}.{nextYear}";
         }
     }
 }
