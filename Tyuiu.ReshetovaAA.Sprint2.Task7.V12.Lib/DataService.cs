@@ -8,7 +8,7 @@ namespace Tyuiu.ReshetovaAA.Sprint2.Task7.V12.Lib
         public bool CheckDotInShadedArea(double x, double y)
         {
             bool res;
-            if ((x >= 0 && x <= 1) && (y >= 0) && (y <= Math.Pow(x, 2)))
+            if ((x >= 0 && x <= 1) && (y >= 0) && (y <= Math.Pow(x, 2))&& (y <= 2 - x))
             {
                 res = true;
             }
